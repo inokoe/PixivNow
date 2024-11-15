@@ -11,7 +11,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
   switch (__PREFIX) {
     case '~': {
       return axios
-        .get<ArrayBuffer>(`https://s.pximg.net/${__PATH}`, {
+        .get<ArrayBuffer>(`https://i.pixiv.re/${__PATH}`, {
           responseType: 'arraybuffer',
           headers: {
             referer: 'https://www.pixiv.net/',
