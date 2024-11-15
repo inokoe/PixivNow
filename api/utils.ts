@@ -17,11 +17,11 @@ export const USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
 export const PXIMG_BASEURL_I = (() => {
   const i = process.env.VITE_PXIMG_BASEURL_I
-  return i ? i.replace(/\/$/, '') + '/' : 'https://i.pximg.net/'
+  return i ? i.replace(/\/$/, '') + '/' : 'https://i.pixiv.re/'
 })()
 export const PXIMG_BASEURL_S = (() => {
   const s = process.env.VITE_PXIMG_BASEURL_S
-  return s ? s.replace(/\/$/, '') + '/' : 'https://s.pximg.net/'
+  return s ? s.replace(/\/$/, '') + '/' : 'https://i.pixiv.re/'
 })()
 
 export class CookieUtils {
